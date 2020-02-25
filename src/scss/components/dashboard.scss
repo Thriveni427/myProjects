@@ -1,0 +1,24 @@
+.rowDashboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.columnDash{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.o-wrapper{
+    flex: 1 0 auto;
+  }
+  .c-main{
+    flex: 1 0 auto;
+    min-height: calc(100vh - 110px);
+  }
+  .c-contentHeader{
+    position: relative;
+  }
+  .adminPanel{
+      margin-left: 20px;
+      color:#9c27b0;    
+  }

@@ -1,0 +1,101 @@
+.header {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 14px 10px;
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding-top: -40px;
+    padding-bottom: -12px;
+    padding-right: 4px;
+    margin-top: -24px;
+    padding-left: 14px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: -20px;
+  }
+  
+  .header a.active:hover  {
+    color:#9c27b0;    
+
+  }
+  
+  .header a.active {
+    color: #9e9e9e;
+    
+  }
+
+  .header a.activePanel {
+    color:#9c27b0;    
+  }
+  
+  .header-right {
+    float: right;
+    margin-right: 20px;
+    padding-top: -20px;
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 18px;  
+    line-height: 25px;
+    border: none;
+    outline: none;
+    color: #9e9e9e;
+    padding-top: -20px;
+    background-color: inherit;
+    margin: 0;
+    margin-left: -16px;    
+  }
+  .dropBtnIcon {
+    margin-left: 11px;
+  }
+  
+  .dropdown-content {
+    margin-top: 50px;
+    display: none;
+    position: absolute;
+    background-color: #ddd;
+    min-width: 110px;
+    // min-height: 50px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: #9e9e9e;
+    padding: 15px 14px;
+    background-color: #ddd;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    color:#9c27b0;    
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .menuIcon {
+      padding-left: 20px;
+      font-size: 20px;
+  }
+  .faIcon{
+      background-color: #9c27b0;
+      color: whitesmoke;
+      padding:5px ;
+  }
