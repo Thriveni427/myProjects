@@ -4,6 +4,7 @@ import Cards from './Cards';
 import CourseRevenue from './CourseRevenue';
 import Calender from './Calender';
 import Sidebar from './Sidebar';
+import AddDeleteEdit from './AddDeleteEdit';
 
 export class Dashboard extends Component {
     render() {
