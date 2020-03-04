@@ -1,10 +1,12 @@
 
+//Add items to To-do List
+//Edit the items in the list
+//Delete items in the list
+//Animate the list items
+
+
 import React, { Component } from 'react';
 import ListItems from './ListItems';
-// import {library} from '@fortawesome/fontawesome-svg-core';
-// import {faTrash} from '@fortawesome/free-solid-svg-icons';
-
-// library.add(faTrash);
 
 export class AddDeleteEdit extends Component {
     constructor(props){
@@ -19,6 +21,8 @@ export class AddDeleteEdit extends Component {
         this.handleInput=this.handleInput.bind(this);
         this.addItem=this.addItem.bind(this);
         this.deleteItem=this.deleteItem.bind(this);
+        this.setUpdate=this.setUpdate.bind(this);
+
     }
     handleInput(e){
         this.setState({
@@ -50,6 +54,17 @@ export class AddDeleteEdit extends Component {
                 items:filteredItems
             })
     }
+    setUpdate(text, key){
+        const items = this.state.items;
+        items.map(item => {
+            if(item.key===key){
+                item.text=text;
+            }
+        })
+        this.setState({
+            items: items
+        })
+    }
     render() {
         return (
             <div className="App">
@@ -62,7 +77,10 @@ export class AddDeleteEdit extends Component {
                         <button type="submit">Add</button>
                     </form>
                 </header>
-                <ListItems items ={this.state.items} deleteItem={this.deleteItem}></ListItems>
+                <ListItems items ={this.state.items} 
+                deleteItem={this.deleteItem}
+                setUpdate={this.setUpdate}
+                ></ListItems>
             </div>
         )
     }
